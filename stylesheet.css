@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display";
+}
+
+
+p {
+    font-family: "Merriweather";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 10px 5px;
+    font-size: 25px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./images/cuttingboard-1.avif");
+    background-size: cover ;
+    background-attachment: fixed;
+}
+
+div.ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+div.ingredients .airFriedChicken {
+    margin: 13px auto auto 40px;
+    padding-right: 15px;
+    padding-left: 25px;
+    background-color: rgba(243, 248, 242, .75);
+    font-size: 20px;
+    line-height: 30px;
+    flex-direction: column;
+}
+
+a {
+    text-align: left;
+    padding-left: 2%;
+    justify-content: left;
+    /* padding: 20px 10px 10px; */
+    margin-left: 10px;
+    color:rgb(69, 67, 64);
+    text-decoration: none;
+}
+
+a.chickenFigCaption {
+    background-color: rgba(243, 248, 242, .75);
+    border-radius: 10px;
+    color: rgb(69, 67, 64);
+    padding-top: 27px;
+    border: 3px solid rgba(69, 67, 64, 0.6);
+    border-radius: 9px;
+}
+
+a:visited {
+    color: rgb(106, 13, 173);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(69, 81, 247);
+    text-decoration: underline;
+}
+
+
+.headerImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.headerImage img {
+    margin-top: 1px;
+    margin-left: 10px;
+    height: 450px;
+    width: 425px;
+    border: 5px solid rgb(69, 67, 64);
+    border-radius: 8px;
+}
+
+.headerImage a.chickenFig {
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 5px
+}
+
+.headerImage figcaption {
+    font-size: 45px;
+    margin: 20px 25px 20px 10px;
+}
+
+.headerImage figcaption .chickenFigCaption {
+    padding: 1px 12px;
+    font-weight: 500;
+    
+}
+
+.description {
+    display: inline-flex;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+    border-top: 5px;
+    margin-top: 3px;
+    margin-left: 15px;
+    line-height: 28px;
+    letter-spacing: normal;
+    font-size: 23px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(243, 248, 242, .75);
+    border:3px solid rgba(69, 67, 64, .6);
+    border-radius: 9px;
+}
+
