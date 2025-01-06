@@ -13,9 +13,12 @@ header {
     /* display: flex;
     flex-direction: row; */
     max-height: 75px;
-    margin: 30px auto 10px 0px;
+    margin: 0px auto 10px 0px;
+    padding-top: 10px;
     font-size: 25px;
-    border-bottom: 7px solid rgb(28, 27, 27);
+    border: 3px solid rgba(69, 67, 64, 0.1);
+    background-color: rgba(243, 248, 242, 1);
+
 }
 
 header .center {
@@ -51,6 +54,16 @@ body {
     background-image: url("./images/cuttingboard-1.avif");
     background-size: cover ;
     background-attachment: fixed;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    border: 3px solid rgba(69, 67, 64, 0.1);
+    background-color: rgba(243, 248, 242, .9);
+    font-size: 17px;
 }
 
 
@@ -136,6 +149,12 @@ a:hover {
     border-radius: 7px;
 }
 
+.topRow .center:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
 .description {
     display: inline-flex;
     align-items: left;
@@ -155,6 +174,12 @@ a:hover {
     border-radius: 9px;
 }
 
+.description:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
 .chickenInfo {
     display: flex;
     flex-direction: row;
@@ -171,12 +196,18 @@ a:hover {
 
 }
 
-.chickenInfo .ingredients {
+.chickenInfo:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
 
+.chickenInfo .ingredients {
     flex-direction: column;
     font-size: 23px;
     margin-right: 50px;
 }
+
 
 .chickenInfo .timing {
     display: flex;
@@ -190,6 +221,7 @@ div.ramenNoodles {
     flex-direction: row;
     padding-bottom: 10px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 div.ramenNoodles img {
