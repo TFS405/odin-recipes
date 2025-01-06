@@ -6,14 +6,43 @@
 
 
 p {
-    font-family: "Merriweather";
+    font-family: "Playfair Display";
 }
 
 header {
+    /* display: flex;
+    flex-direction: row; */
+    max-height: 75px;
+    margin: 30px auto 10px 0px;
+    font-size: 25px;
+    border-bottom: 7px solid rgb(28, 27, 27);
+}
+
+header .center {
     display: flex;
     justify-content: center;
-    margin: 30px auto 10px 5px;
-    font-size: 25px;
+    align-items: center;
+    padding-left: 0px;
+    margin-left: -100px;
+}
+header .center h1 {
+    margin-left: -600px;
+}
+
+header .headerLeft {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: -65px;
+    margin-left: 70px;
+}
+
+header .headerRight {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: -65px;
+    margin-right: 650px;
 }
 
 body {
@@ -24,20 +53,6 @@ body {
     background-attachment: fixed;
 }
 
-div.ingredients {
-    display: flex;
-    flex-direction: column;
-}
-
-div.ingredients .airFriedChicken {
-    margin: 13px auto auto 40px;
-    padding-right: 15px;
-    padding-left: 25px;
-    background-color: rgba(243, 248, 242, .75);
-    font-size: 20px;
-    line-height: 30px;
-    flex-direction: column;
-}
 
 a {
     text-align: left;
@@ -69,54 +84,165 @@ a:hover {
 }
 
 
-.headerImage {
+.topRow {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: left;
     align-items: flex-start;
 }
 
-.headerImage img {
-    margin-top: 1px;
-    margin-left: 10px;
-    height: 450px;
-    width: 425px;
-    border: 5px solid rgb(69, 67, 64);
-    border-radius: 8px;
+.topRow figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
-.headerImage a.chickenFig {
+
+
+.topRow img {
+    margin-top: 1px;
+    margin-left: 10px;
+    height: 550px;
+    width: 650px;
+    border: 3px solid rgba(69, 67, 64, 0.6);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.topRow a.chickenFig {
     padding-left: 5px;
     padding-top: 5px;
     margin-left: 5px
-}
-
-.headerImage figcaption {
-    font-size: 45px;
-    margin: 20px 25px 20px 10px;
-}
-
-.headerImage figcaption .chickenFigCaption {
-    padding: 1px 12px;
-    font-weight: 500;
     
+}
+
+.topRow .chickenFig:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+.topRow .center {
+    font-size: 35px;
+    display: inline;
+    justify-content: right;
+    max-width: 1200px;
+    margin: 5px 50px 15px 100px;
+    padding: 10px;
+    background-color: rgba(243, 248, 242, .75);
+    border: 3px solid rgba(69, 67, 64, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
 }
 
 .description {
     display: inline-flex;
     align-items: left;
     justify-content: left;
-    padding: 10px;
+    max-width: 640px;
+    padding: 10px 9px;
     border-top: 5px;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left: 15px;
     line-height: 28px;
     letter-spacing: normal;
-    font-size: 23px;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 400;
     background-color: rgba(243, 248, 242, .75);
     border:3px solid rgba(69, 67, 64, .6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 9px;
+}
+
+.chickenInfo {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    border: 3px solid rgba(69, 67, 64, 0.6);
+    background-color: rgba(243, 248, 242, .75);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 615px;
+    margin: 13px 1000px auto 15px;
+    padding: 8px 15px 8px 27px;
+
+}
+
+.chickenInfo .ingredients {
+
+    flex-direction: column;
+    font-size: 23px;
+    margin-right: 50px;
+}
+
+.chickenInfo .timing {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    line-height: 37px;
+}
+
+div.ramenNoodles {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+
+div.ramenNoodles img {
+    height: 435px;
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 4px solid rgba(69, 67, 64, 0.75);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.ramenNoodles:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02); /* Slight zoom */
+    transition: all 0.3s ease;
+}
+
+div.ramenNoodlesDescription {
+    border: 3px solid rgba(69, 67, 64, 0.6);
+    border-radius: 9px;
+    background-color: rgba(243, 248, 242, .75);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-height: 400px ;
+    margin: 15px;
+}
+
+div.ramenNoodles p {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+div.ramenNoodles ul {
+    margin-top: 1px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+}
+
+
+#emoji {
+    margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 275px;
+    width: 250px;
+    border-color: rgba(69, 67, 64, 0);
+}
+#centerDesc {
+    font-size: 30px;
+    margin-left: 6px;
+    font-weight: lighter;
 }
 
